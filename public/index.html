@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>World's Worst Art Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid text-center welcome">
+    <h1>Welcome to my art gallery</h1>
+    <h3>How many arts would you like to buy?</h3>
+  </div>
+  <div class="container art">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+          <div class="well">
+          <img src="images/art.jpg" alt="beautiful art" height="400" class="text-center">
+          <br>
+            <div class="row">
+              <div class="col-md-8">
+                <p>Stunning masterpiece that defies all logic made by an actual human. Oil on canvas. Price: <span class="was">$300</span>  <span class="is"> $299.99 </span></p>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-warning add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <section class="purchase-section hide">
+      <div class="row">
+        <div class="col-md-4" id="offset">
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <form role="form" id="form" class="form">
+              <div class="form-group">
+                <label class="control-label" for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="cardholder" placeholder="First Name Last Name" autofocus>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="card-number">Card Number</label>
+                <input type="number" class="form-control" id="card-number" name="number" placeholder="Enter Credit Card...">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="card-exp">Expiration Date</label>
+                <input type="text" class="form-control" id="card-exp" name="expiration" placeholder="MMYY">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="cvc">CVC</label>
+                <input type="number" class="form-control" id="cvc" name="cvc" placeholder="123">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="address">Address</label>
+                <input type="text" class="form-control" id="address" name="avs_street">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="zip">Zip Code</label>
+                <input type="number" class="form-control" id="zip" name="avs_zip">
+              </div>
+              <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="congrats hide">
+      <div class="well">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/art.jpg" alt="beautiful art" height="200">
+          </div>
+          <div class="col-md-6">
+            <h3>Congratulations! You purchased one art :)</h3>
+            <h5 class="insert-feedback"></h5>
+            <p>Purchase more of the same art? <a href="/">Click Here</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="app.js" type="application/javascript"></script>
+</body>
+</html>

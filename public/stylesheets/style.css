@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.well {
+  margin: 15px;
+  padding: 25px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+}
+.welcome {
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #768fa7;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.was {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #aaaaaa;
+
+}
+.is{
+  font-weight: bold;
+  color: #B12704;
+}
+.hide {
+  display: none;
+}
